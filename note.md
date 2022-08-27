@@ -10,8 +10,13 @@ branch  => cành , nhánh nhỏ
 - git commit -m "initial commit" : lưu lại và chi biết tên tại thời điểm bắt đầu repo
 - git log : xem lại lịch sử commit
 - git log --oneline : xem lại commit một các thu gọn
-- git checkout (id-git..oneline) : trở lại thời điểm bạn đầu
+- git checkout (id-git..oneline)          : trở lại thời điểm bạn đầu
 - git checkout master : qoay lại hiện tại
 -git branch : mặc định master
--git checkout -b (tên branch) : tạo branch mới
-- git merge dev : tổng hợp branch của dev sang master 
+-git checkout -b (tên branch name) : tạo branch mới 
+- git branch : đi vào nhánh hiện tại
+branch dev :
+ -git checkout (tên branch "master") : chuyển branch dev sang thành branch "master"
+branch master : 
+- git merge (tên branch : "dev") : tổng hợp branch của dev sang master 
+- git branch -d (tên branch : "dev") : xóa branch đó 
