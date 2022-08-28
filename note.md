@@ -7,47 +7,51 @@ Local ==> tất cả các tệp trên một máy tính
 Remote ==> tệp ngoài local được hiểu là sever
 
 # commands
-- git init : làm dự  án chuyển thành git (repo)
-- git status : cho biết được trạng thái của dự án
-- git add : chuẩn bị lưu lại thời điểm hiện tại của dự án
-- git add . là lưu tạm thời lại tất cả các file của dự án
-- git reset : hủy lưu file 
-- git commit -m "initial commit" : lưu lại và chi biết tên tại thời điểm bắt đầu repo
-- git log : xem lại lịch sử commit
-- git log --oneline : xem lại commit một các thu gọn
-- git checkout (id-git..oneline)          : trở lại thời điểm bạn đầu
+  - git init : làm dự  án chuyển thành git (repo)
+  - git status : cho biết được trạng thái của dự án
+  - git add : chuẩn bị lưu lại thời điểm hiện tại của dự án
+  - git add . là lưu tạm thời lại tất cả các file của dự án
+  - git reset : hủy lưu file 
+  - git commit -m "initial commit" : lưu lại và chi biết tên tại thời điểm bắt đầu repo
+  - git log : xem lại lịch sử commit
+  - git log --oneline : xem lại commit một các thu gọn
+  - git checkout (id-git..oneline)          : trở lại thời điểm bạn đầu
 
-- git checkout master : qoay lại hiện tại
--git branch : mặc định master
--git checkout -b (tên branch name) : tạo branch mới 
-- git branch : đi vào nhánh hiện tại
+  - git checkout master : qoay lại hiện tại
+  - git branch : mặc định master
+  - git checkout -b (tên branch name) : tạo branch mới 
+  - git branch : đi vào nhánh hiện tại
 
 branch dev :
- -git checkout (tên branch "master") : chuyển branch dev sang thành branch "master"
+  - git checkout (tên branch "master") : chuyển branch dev sang thành branch "master"
 branch master : 
-- git merge (tên branch : "dev") : tổng hợp branch của dev sang master 
-- git branch -D (tên branch : "dev") : xóa branch đó 
+  - git merge (tên branch : "dev") : tổng hợp branch của dev sang master 
+  - git branch -D (tên branch : "dev") : xóa branch đó 
 
 conflect : xung đột
-- git commit : tổng hợp , giải quyết 1 conflict
+  - git commit : tổng hợp , giải quyết 1 conflict
 
 local : 
-- git push : đẩy source lên repo của mình trên git
+  - git push : đẩy source lên repo của mình trên git
 đẩy code từ local lên github ~~
+
 " git add . 
   git commit -m 'note'
   git remote add (tên)  (link github)
   git push (tên) (tên branch) 
+
   vd git remote add origin https://github.com/SRin285/Github.git
      git push origin master
 "
+
 lấy code trên github về local ~~
+
 "
  create foder
  link foder : lấy link foder để chứa. 
  link : lấy đường link github (repo) của dự án có sẵn 
 
- mở cd : 
+mở cd : 
   - cd (link foder)
   - git clone (link)
   - ls ==> kq : cho biết repo
@@ -58,3 +62,23 @@ lấy code trên github về local ~~
   - git commit -m 'nd'
   - git push
 "
+
+branch local : đẩy branch lên repo
+
+   - git push -u origin  (tên branch) lần đầu 
+   - git push : lần sau dùng git put bình thường
+
+lấy branch repo về local
+   - tạo brach ở trên github
+   vs-git base : 
+   - git checkout master trở về master
+   - git fetch origin
+   - git checkout -b (tên branch) origin/tenbranch 
+
+tổng hợp branch (tên br) sang master
+   - pull requests => new pull request => branch : master  compare : tên branch => merge
+
+git base : 
+   - git checkout master 
+   - git pull 
+	
