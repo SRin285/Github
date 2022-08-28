@@ -21,13 +21,15 @@ Remote ==> tệp ngoài local được hiểu là sever
   - git branch : mặc định master
   - git checkout -b (tên branch name) : tạo branch mới 
   - git branch : đi vào nhánh hiện tại
-
+ 
 branch dev :
   - git checkout (tên branch "master") : chuyển branch dev sang thành branch "master"
 branch master : 
   - git merge (tên branch : "dev") : tổng hợp branch của dev sang master 
-  - git branch -D (tên branch : "dev") : xóa branch đó 
+  - git branch -D (tên branch : "dev") : xóa branch đó
 
+ 
+=============================
 conflect : xung đột
   - git commit : tổng hợp , giải quyết 1 conflict
 
@@ -37,13 +39,14 @@ local :
 
 " git add . 
   git commit -m 'note'
-  git remote add (tên)  (link github)
-  git push (tên) (tên branch) 
+  git remote add origin  (link github)
+  git push origin (tên branch) 
 
   vd git remote add origin https://github.com/SRin285/Github.git
      git push origin master
 "
 
+================================
 lấy code trên github về local ~~
 
 "
@@ -63,22 +66,50 @@ mở cd :
   - git push
 "
 
+=================================
 branch local : đẩy branch lên repo
-
+"
    - git push -u origin  (tên branch) lần đầu 
    - git push : lần sau dùng git put bình thường
-
+"
+================================
 lấy branch repo về local
+"
    - tạo brach ở trên github
    vs-git base : 
    - git checkout master trở về master
    - git fetch origin
    - git checkout -b (tên branch) origin/tenbranch 
-
-tổng hợp branch (tên br) sang master
-   - pull requests => new pull request => branch : master  compare : tên branch => merge
+"
+================================
+tổng hợp branch (tên branch) sang master
+"   
+    - pull requests => new pull request => branch : master  compare : tên branch => merge
 
 git base : 
    - git checkout master 
    - git pull 
-	
+"	
+
+
+================================
+Remote : che dấu file 
+"    create folder : .gitignore {.file cần dấu}
+git base : 
+	- git add 
+	- git commit -m 'remote gitignore'
+	- git push
+"
+================================
+
+fork 
+   tác giả :
+	linl : lấy link thư viện của tác giả 
+   about : 
+	dán link ==> fork
+		( chỉnh sửa .... )
+	==> commit changes
+ 
+   share đến tác giả
+	==> pull request ==> new pull request ==> create pull request 
+	==> chờ tác giả đồng ý
