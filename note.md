@@ -22,3 +22,5 @@ branch dev :
 branch master : 
 - git merge (tên branch : "dev") : tổng hợp branch của dev sang master 
 - git branch -D (tên branch : "dev") : xóa branch đó 
+conflect : xung đột
+- git commit : tổng hợp , giải quyết 1 conflict
