@@ -33,3 +33,11 @@ conflect : xung đột
 
 local : 
 - git push : đẩy source lên repo của mình trên git
+push code cách 2  ~~
+" git add . 
+  git commit -m 'note'
+  git remote add (tên)  (link github)
+  git push (tên) (tên branch) 
+  vd git remote add origin https://github.com/SRin285/Github.git
+     git push origin master
+"
