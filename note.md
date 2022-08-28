@@ -43,4 +43,18 @@ local :
 "
 lấy code trên github về local ~~
 "
+ create foder
+ link foder : lấy link foder để chứa. 
+ link : lấy đường link github (repo) của dự án có sẵn 
+
+ mở cd : 
+  - cd (link foder)
+  - git clone (link)
+  - ls ==> kq : cho biết repo
+  - cd kq : link vào repo
+  - code . : mở code
+  " push code "
+  - git add . 
+  - git commit -m 'nd'
+  - git push
 "
