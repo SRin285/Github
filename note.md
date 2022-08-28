@@ -1,7 +1,11 @@
 # terms
-repository(repo) => thư mục
-branch  => cành , nhánh nhỏ
-conflict ==> xung đột 
+Repository(repo) => thư mục
+Branch  => cành , nhánh nhỏ
+Conflict ==> xung đột 
+
+Local ==> tất cả các tệp trên một máy tính
+Remote ==> tệp ngoài local được hiểu là sever
+
 # commands
 - git init : làm dự  án chuyển thành git (repo)
 - git status : cho biết được trạng thái của dự án
@@ -17,10 +21,15 @@ conflict ==> xung đột
 -git branch : mặc định master
 -git checkout -b (tên branch name) : tạo branch mới 
 - git branch : đi vào nhánh hiện tại
+
 branch dev :
  -git checkout (tên branch "master") : chuyển branch dev sang thành branch "master"
 branch master : 
 - git merge (tên branch : "dev") : tổng hợp branch của dev sang master 
 - git branch -D (tên branch : "dev") : xóa branch đó 
+
 conflect : xung đột
 - git commit : tổng hợp , giải quyết 1 conflict
+
+local : 
+- git push : đẩy source lên repo của mình trên git
